@@ -17,5 +17,11 @@ public class Task9_12 {
         a = b1;
         c = a1;
         System.out.println(a+"\n"+b+"\n"+c);
+        System.out.println();
+        //b
+        b = a1;
+        c = b1;
+        a = c1;
+        System.out.println(a+"\n"+b+"\n"+c);
     }
 }
