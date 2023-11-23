@@ -1,6 +1,6 @@
 package String;
 
-public class Task9_12 {
+public class String9_12 {
     public static void main(String[] args) {
         /*
         Составить программу обмена значениями трех переменных величин а, b, c
