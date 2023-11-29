@@ -2,7 +2,7 @@ package Homework4;
 
 import java.util.Scanner;
 
-public class Task_7alt {
+public class Task_07alt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //Не придумал варианта лучше, чем цикл для проверки длины строки

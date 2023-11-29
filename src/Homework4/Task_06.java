@@ -9,7 +9,7 @@ import java.util.Scanner;
 столетий, которые не делятся нацело на 400.
  */
 
-public class Task_6 {
+public class Task_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int year = scanner.nextInt();

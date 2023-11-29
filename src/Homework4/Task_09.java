@@ -5,7 +5,7 @@ package Homework4;
 вывести на экран – спуск это или подъем, ровная дорога или
 вообще отвесная.
  */
-public class Task_9 {
+public class Task_09 {
     public static void main(String[] args) {
         int x1, y1, x2, y2;
         //Цикл против одинаковых точек 'x'
