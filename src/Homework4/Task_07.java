@@ -17,7 +17,7 @@ public class Task_07 {
         do {
             System.out.println("Введите букву или цифру");
             input = scanner.nextLine();
-        } while (input.length()>1);
+        } while (input.length()!=1);
 
         //Через регулярное выражение
         //при некоторых символах выдает либо "Латиница", либо ошибку
@@ -27,8 +27,8 @@ public class Task_07 {
         if (letterFound) {
             System.out.println("Латиница");
         } else {
-            Matcher cyrlic = letter.matcher("йцукенгшщзхъфывапролджэячсмитьбюё");
-            letterFound = cyrlic.find();
+            Matcher cyrillic = letter.matcher("йцукенгшщзхъфывапролджэячсмитьбюё");
+            letterFound = cyrillic.find();
             if (letterFound) {
                 System.out.println("Кириллица");
             } else {
