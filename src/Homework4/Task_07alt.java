@@ -11,7 +11,7 @@ public class Task_07alt {
         do {
             System.out.println("Введите букву или цифру");
             input = scanner.nextLine();
-        } while (input.length()>1);
+        } while (input.length()!=1);
 
         String lat = "qwertyuiopasdfghjklzxcvbnm";
         String cyrillic = "йцукенгшщзхъфывапролджэячсмитьбюё";
