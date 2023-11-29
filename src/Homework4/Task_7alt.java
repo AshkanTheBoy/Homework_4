@@ -6,6 +6,7 @@ public class Task_7alt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //Не придумал варианта лучше, чем цикл для проверки длины строки
+        //метод ".contains" требует тип CharSequence
         CharSequence input;
         do {
             System.out.println("Введите букву или цифру");
@@ -15,22 +16,16 @@ public class Task_7alt {
         String lat = "qwertyuiopasdfghjklzxcvbnm";
         String cyrillic = "йцукенгшщзхъфывапролджэячсмитьбюё";
         String numbers = "1234567890";
-        String allSymbols = lat+cyrillic+numbers;
 
-        if (allSymbols.contains(input)) {
             if (lat.contains(input)) {
                 System.out.println("Латиница");
             } else if (cyrillic.contains(input)) {
                 System.out.println("Кириллица");
             } else if (numbers.contains(input)) {
                 System.out.println("Цифра");
+            } else {
+                System.out.println("Невозможно определить");
             }
-        } else {
-            System.out.println("Невозможно определить");
         }
-
-
-
-
     }
-}
+
