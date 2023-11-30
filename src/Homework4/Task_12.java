@@ -16,13 +16,15 @@ public class Task_12 {
         while (status) {
             boolean isCorrect = true;
             System.out.println("Введите шестизначное число");
-            String symbols = "~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>?`\\/][';.,qwertyuiopasdfghjklzxcvbnmЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮёЁ";
+            //Изначальный вариант
+            //String symbols = "~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:\"ZXCVBNM<>?`\\/][';.,qwertyuiopasdfghjklzxcvbnmЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮёЁ";
+            String numbers = "0123456789";
             input = scanner.nextLine();
             //если в вводе есть символ - цикл начнется заново
-            char[] toChar = symbols.toCharArray();
+            char[] toChar = input.toCharArray();
             for (char symbol : toChar) {
                 CharSequence ch = String.valueOf(symbol);
-                if (input.contains(ch)){
+                if (!numbers.contains(ch)) {
                     isCorrect = false;
                     break;
                 }
